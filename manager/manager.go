@@ -2,10 +2,9 @@
 package manager
 
 import (
-	"yorozuya/task"
-
 	"github.com/golang-collections/collections/queue"
 	"github.com/google/uuid"
+	"github.com/jon-at-github/yorozuya/task"
 )
 
 // Manager: The Manager type represents a manager that keeps track of the state of the workers in the cluster.

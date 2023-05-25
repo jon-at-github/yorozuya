@@ -2,10 +2,10 @@
 package worker
 
 import (
-	"yorozuya/task"
-
 	"github.com/golang-collections/collections/queue"
 	"github.com/google/uuid"
+
+	"github.com/jon-at-github/yorozuya/task"
 )
 
 // Worker: The Worker type represents a worker that is to be run in a container.
