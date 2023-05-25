@@ -1,10 +1,6 @@
 GO_VERSION := 1.20
-ARCH := armv6l
+ARCH := amd64
 GO_BINARY_LATEST := go$(GO_VERSION).linux-$(ARCH).tar.gz
-TAG := $$(git describe --abbrev=0 --tags --always)
-HASH := $$(git rev-parse HEAD)
-DATE := $$(date +%Y-%m-%d.%H:%M:%S)
-LDFLAGS := -w -X github.com/jon-at-github/hello-api/handlers.hash=$(HASH) -X github.com/jon-at-github/hello-api/handlers.tag=$(TAG) -X github.com/jon-at-github/hello-api/handlers.date=$(DATE)
 
 setup: install-go init-go build
 
